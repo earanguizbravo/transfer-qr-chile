@@ -6,14 +6,14 @@ export default function CopyButton({ text }: { text: string }) {
         await navigator.clipboard.writeText(text);
         const btn = document.getElementById('copy-btn');
         if (btn) {
-          btn.textContent = '✅ ¡Copiado!';
-          setTimeout(() => (btn.textContent = '📋 Copiar datos'), 2000);
+          btn.textContent = '✅ Información copiada';
+          setTimeout(() => (btn.textContent = '📋 Copiar información'), 2000);
         }
       }}
       id="copy-btn"
-      className="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-xl transition cursor-pointer"
+      className="w-full py-3 bg-slate-100 hover:bg-slate-200 text-slate-700 font-medium rounded-xl transition cursor-pointer border border-slate-200"
     >
-      📋 Copiar datos
+      📋 Copiar información
     </button>
   );
 }
