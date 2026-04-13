@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-export const meta Metadata = {
+export const metadata: Metadata = {
   title: "Transferencias Chile - Datos QR",
   description: "Copia rápido los datos bancarios para transferencia",
 };
